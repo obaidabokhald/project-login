@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container
+{
+    /* width: 100%; */
+    height: 100vh;
+    background: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.container .login
+{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255,0.11);
+    box-shadow: -1px 4px 28px 0px rgb(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  /* filter: blur(10px); */
+    padding: 65px 40px 40px;
+    position: relative;
+}
+/* الايتعاد قدر الامكان عن ال position 
+الابتعاد عن البيكسل 
+*/
+.login .user{
+ width: 80px ;
+ position: absolute;
+ top: -40px;
+ left: 50%;
+ transform: translateX(-50%);
+ border-radius:50% ;
+}
+.login h1{
+    color:#fff;  
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.login form label{
+    color:#fff;
+    font-weight: bold;
+}
+.login form input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 17px;
+    margin-bottom:20px ;
+}
+.login form button{
+    color: #000;
+    font-size: 16px ;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #000;    
+ }
+.login .liner-or{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.login .liner-or span
+{
+    color: #fff;
+}
+.login .liner-or span::before{
+    content: '';
+    position: absolute;
+    width: 115px;
+    height: 1px;
+    background-color: #fff;
+    left: 20px;
+    top: 50%;
+    /* transform: rotateX(-50%); */
+}
+
+.login .liner-or span::after{
+    content: '';
+    position: absolute;
+    width: 115px;
+    height: 1px;
+    right: 20px;
+    background-color: #fff;
+    top: 50%;
+    /* transform: rotateX(-50%); */
+}
+.login .hh{
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+.login .hh .btn img{
+    width: 155px ;
+    border: 1px solid;
+    border-radius:5px ;
+} 
+.login .hh .btn img.fb{
+    border-color:#1f89d4;
+}
+.login .hh .btn img.google{
+    border-color:#fb5859;
+}
+.login .sign{
+    margin-top: 20px ;
+    font-size: 15px;
+    color: #eee;
+    text-align: center;
+}
+.login .sign a{
+    color: #387aff;
+    text-decoration: none;
+    font-weight: bold;
+}
